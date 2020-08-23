@@ -11,7 +11,7 @@ for i in range(0,len(data)):
         lists.append(data[i]["id"])
 wb = openpyxl.load_workbook('0807.xlsx')
 sh = wb['Sheet1']
-for i in range(16,537):
+for i in range(16,549):
     if sh.cell(i,3).value in lists:
         sh.cell(i,8).value=1
     else:
